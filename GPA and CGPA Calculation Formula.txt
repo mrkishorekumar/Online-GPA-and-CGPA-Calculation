@@ -1,0 +1,15 @@
+17 Regulation
+
+O grade = 91-100
+
+A+ grade = 81-90
+
+A grade = 71-80
+
+B+ grade = 61-70
+
+B grade = 50-60
+
+gpa = {credits * grade point} + all subjects / add all total credits
+
+cgpa = total / no of semester

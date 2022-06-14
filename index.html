@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocumentGPA and CGPA Calculation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form action="javascript:void(0);">
+        <table id="table">
+            <tbody id="tableToModify">
+                <tr id="before">
+                    <th>Subject</th>
+                    <th>Credits</th>
+                    <th>Grade Point</th>
+                </tr>
+                <tr id="cloneModel">
+                    <td><input type="text" /></td>
+                    <td><input type="number" class="mark" required/></td>
+                    <td>
+                        <select name="grade" id="grade" class="grade" required>
+                            <option value="10">O</option>
+                            <option value="9">A+</option>
+                            <option value="8">A</option>
+                            <option value="7">B+</option>
+                            <option value="6">B</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Calaculate" onclick="calaculate()" />
+    </form>
+    <input type="button" value="Add Subject" onclick="addSubject()" id="add"/>
+    <input type="button" value="Remove Subject" onclick="removeSubject()" id="remove"/>
+
+</body>
+
+</html>
