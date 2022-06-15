@@ -18,4 +18,12 @@ img {
     margin-left: 2%;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F9F9F9;
+  text-align: center;
+}
 
