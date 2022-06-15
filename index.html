@@ -11,8 +11,12 @@
 </head>
 
 <body>
+    <h1>GPA Calaculator</h1>
+    <input type="number" placeholder="Number of Subjects" id="numberof" />
+    <input type="button" value="Add Subject" onclick="addSubject()" id="add"/>
+
     <form action="javascript:void(0);">
-        <table id="table">
+        <table>
             <tbody id="tableToModify">
                 <tr id="before">
                     <th>Subject</th>
@@ -35,10 +39,29 @@
             </tbody>
         </table>
         <input type="submit" value="Calaculate" onclick="calaculate()" />
+        <h1 id="gpa"></h1>
     </form>
-    <input type="button" value="Add Subject" onclick="addSubject()" id="add"/>
-    <input type="button" value="Remove Subject" onclick="removeSubject()" id="remove"/>
+    <hr>
+    <h1>CGPA Calaculator</h1>
+    <input type="number" placeholder="Number of Semester" id="numberofCGPA" />
+    <input type="button" value="Add Semester" onclick="addSemester()" id="add"/>
 
+    <form action="javascript:void(0);">
+        <table>
+            <tbody id="tableToModifyCGPA">
+                <tr>
+                    <th>Semester GPA</th>
+                </tr>
+                <tr id="cloneModelCGPA">
+                    <td>
+                        <input type="number" class="cgpa" required />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <input type="submit" value="Calaculate" onclick="calaculateCGPA()" />
+    <h1 id="cgpa"></h1>
 </body>
 
 </html>
