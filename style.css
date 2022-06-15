@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    min-width: 500px;
 }
 
 nav {
@@ -17,3 +18,5 @@ table {
 img {
     margin-left: 2%;
 }
+
+
