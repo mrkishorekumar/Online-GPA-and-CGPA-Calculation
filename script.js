@@ -13,7 +13,7 @@ function addSubject(){
 }
 
 function calaculate(){
-    const markList = document.getElementsByClassName('mark')
+    const markList = document.getElementsByClassName('marks')
     const mark = []
     for(let i = 0; i<markList.length;i++){
         mark.push(parseInt(markList[i].value))
